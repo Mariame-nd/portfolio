@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mariame NDIAYE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="main-card">
+        <nav>
+            <div class="logo">Mariame<span>NDIAYE</span></div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href=../index.html>Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projet.html">Projects</a></li>
+                <li><a href="resume.html">Blog</a></li>
+                <li><a href="contact.html" class="active ">Contact</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <div class="social-icons">
+                <a href="https://wa.me/221774920051" target="_blank" class="whatsapp"><i
+                        class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/mariam__nde" target="_blank" class="instagram"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://snapchat.com/t/chkzPfgy" target="_blank" class="snapchat"><i
+                        class='bx bxl-snapchat'></i></a>
+            </div>
+        </nav>
+
+        <div class="scroll-container">
+            <h1 class="section-title">Espace <span>Interactif</span></h1>
+
+            <section class="form-section">
+                <h2 class="form-label"><i class='bx bx-search-alt'></i> Rechercher un projet</h2>
+                <div class="search-box" style="display: flex; gap: 10px;">
+                    <input type="text" placeholder="Ex: ESP32, Cybersécurité..." style="margin-bottom: 0;">
+                    <button class="btn-main" style="width: auto; padding: 0 20px;">Filtrer</button>
+                </div>
+            </section>
+
+            <div class="contact-grid">
+                <section class="form-section">
+                    <h2 class="form-label"><i class='bx bx-envelope'></i> Me joindre</h2>
+                    <form class="custom-form">
+                        <input type="text" placeholder="Nom" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Votre message..." rows="4" required></textarea>
+                        <button type="submit" class="btn-main">Envoyer</button>
+                    </form>
+                </section>
+
+                <section class="form-section">
+                    <h2 class="form-label"><i class='bx bx-edit'></i> Nouveau Projet</h2>
+                    <form class="custom-form">
+                        <select required>
+                            <option value="" disabled selected>Type de service</option>
+                            <option value="web">Web Design</option>
+                            <option value="iot">IoT / ESP32</option>
+                            <option value="cyber">Cybersécurité</option>
+                        </select>
+                        <input type="number" placeholder="Budget estimé (FCFA)">
+                        <textarea placeholder="Décrivez votre idée..." rows="4"></textarea>
+                        <button type="submit" class="btn-main">Soumettre</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

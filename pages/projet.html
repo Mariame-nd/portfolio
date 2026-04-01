@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Mariame NDIAYE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="main-card">
+        <nav>
+            <div class="logo">Mariame<span>NDIAYE</span></div>
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href=../index.html>Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projet.html" class="active">Projects</a></li>
+                <li><a href="resume.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="scroll-container">
+            <h1 class="title-projects">Mes Projets</h1>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="../images/portfolio.png" alt="Portfolio">
+                    <div class="overlay">
+                        <h4>Mon Portfolio</h4>
+                        <p>Portfolio en ligne</p>
+                        <a href="https://mariame-nd.github.io/mariame.portfolio/" target="_blank" class="view-btn">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../images/al qalb.png" alt="Al Qalb">
+                    <div class="overlay">
+                        <h4>Al Qalb</h4>
+                        <p>Site de solidarité</p>
+                        <a href="https://mariame-nd.github.io/projet-web-alqalb/" target="_blank" class="view-btn">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../images/restaurant.png" alt="Restaurant">
+                    <div class="overlay">
+                        <h4>Spicy Food</h4>
+                        <p>Restaurant</p>
+                        <a href="#modal-resto" class="view-btn">Voir Détails</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../images/e commerce.png" alt="E-commerce">
+                    <div class="overlay">
+                        <h4>E-Commerce</h4>
+                        <p>Boutique de Maillots</p>
+                        <a href="#modal-shop" class="view-btn">Voir Détails</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../images/flyers.png" alt="Business Canvas">
+                    <div class="overlay">
+                        <h4>Business Canvas</h4>
+                        <p>Stratégie Samb Sa Alal</p>
+                        <a href="../assets/Business Model Groupe 4.pdf" target="_blank" class="view-btn">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../images/esp32.png" alt="ESP32">
+                    <div class="overlay">
+                        <h4>ESP32 Server</h4>
+                        <p>Arduino & IoT</p>
+                        <a href="#modal-esp" class="view-btn">Voir Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-resto" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="../images/restaurant.png" alt="Interface Restaurant" class="full-img">
+                <div class="modal-text">
+                    <h3>Concept : Teranga</h3>
+                    <p>Développement d'une interface web moderne pour un restaurant. L'idée était de créer un menu
+                        digital fluide et élégant en utilisant CSS Grid et des effets de survol dynamiques.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-shop" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="../images/e commerce.png" alt="Interface E-commerce" class="full-img">
+                <div class="modal-text">
+                    <h3>Concept : Vente Maillot Foot</h3>
+                    <p><strong>Description :</strong> Création d'une plateforme spécialisée dans la vente d'articles de
+                        sport. Le site propose une large gamme de maillots de football (clubs et sélections) ainsi que
+                        des ballons officiels.</p>
+                    <p>L'interface assure une navigation fluide par catégories avec un design dynamique rappelant
+                        l'univers du sport.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-esp" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="../images/esp32.png" alt="Interface ESP32" class="full-img">
+                <div class="modal-text">
+                    <h3>Concept : ESP32 Server</h3>
+                    <p><strong>Description :</strong> Projet IoT permettant de piloter des équipements à distance. Le
+                        serveur web embarqué permet de visualiser les données des capteurs en temps réel sur une
+                        interface personnalisée.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
