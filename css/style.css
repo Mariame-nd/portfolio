@@ -102,7 +102,7 @@ nav {
     color: #bd00ff;
 }
 
-/*index*/
+/*Accueil*/
 .hero {
     display: flex;
     align-items: center;
@@ -293,7 +293,7 @@ nav {
     }
 }
 
-/*About*/
+/*A Propos*/
 
 .scroll-container {
     flex: 1;
@@ -499,7 +499,7 @@ strong {
     }
 }
 
-/*projet*/
+/*Projets*/
 
 .scroll-container {
     flex: 1;
@@ -697,7 +697,7 @@ strong {
     }
 }
 
-/*Resume*/
+/*Blog*/
 
 .scroll-container {
     flex: 1;
