@@ -11,21 +11,24 @@
 }
 
 body {
+
     background-color: #020406;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     color: white;
+    padding: 20px 0;
 }
 
 .main-card {
     background-color: #0b1118;
     width: 95%;
     max-width: 1150px;
-    height: 85vh;
+    min-height: 85vh;
     border-radius: 40px;
     padding: 40px 60px;
     border: 1px solid rgba(189, 0, 255, 0.5);
@@ -34,6 +37,14 @@ body {
     justify-content: space-between;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     position: relative;
+}
+
+.stats-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(189, 0, 255, 0.3);
 }
 
 nav {
@@ -234,9 +245,18 @@ nav {
 
 @media (max-width: 900px) {
     .main-card {
-        height: 90vh;
-        padding: 30px;
-        overflow-y: auto;
+        height: auto;
+        min-height: 95vh;
+        padding: 30px 20px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .stats-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 20px;
     }
 
     .menu-icon {
