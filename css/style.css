@@ -102,7 +102,7 @@ nav {
     color: #bd00ff;
 }
 
-/*Accueil*/
+/*index*/
 .hero {
     display: flex;
     align-items: center;
@@ -293,7 +293,7 @@ nav {
     }
 }
 
-/*A Propos*/
+/*About*/
 
 .scroll-container {
     flex: 1;
@@ -499,7 +499,7 @@ strong {
     }
 }
 
-/*Projets*/
+/*projet*/
 
 .scroll-container {
     flex: 1;
@@ -536,6 +536,48 @@ strong {
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
+}
+
+.scroll-container {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #bd00ff;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+
+.section-title span {
+    color: #bd00ff;
+}
+
+.form-section {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: #bd00ff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .overlay {
@@ -697,7 +739,7 @@ strong {
     }
 }
 
-/*Blog*/
+/*Resume*/
 
 .scroll-container {
     flex: 1;
@@ -1018,47 +1060,6 @@ strong {
     text-transform: uppercase;
 }
 
-.scroll-container {
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.scroll-container::-webkit-scrollbar {
-    width: 5px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-    background: #bd00ff;
-    border-radius: 10px;
-}
-
-.section-title {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.8rem;
-}
-
-.section-title span {
-    color: #bd00ff;
-}
-
-.form-section {
-    background: rgba(255, 255, 255, 0.02);
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    margin-bottom: 20px;
-}
-
-.form-label {
-    color: #bd00ff;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
 
 .contact-grid {
     display: grid;
