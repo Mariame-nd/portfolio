@@ -7,6 +7,7 @@
     <title>Projects | Mariame NDIAYE</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -109,7 +110,7 @@
                     <img src="../images/restaurant.png" alt="Interface Restaurant" class="full-img">
                     <div class="modal-text">
                         <h3>Concept : Teranga</h3>
-                        <p>Développement d'une interface web moderne pour un restaurant...</p>
+                        <p>Développement d'une interface web moderne pour un restaurant.</p>
                     </div>
                 </div>
             </div>
@@ -146,25 +147,17 @@
 
         function filterProjects() {
             const searchText = searchInput.value.toLowerCase();
-
             projectCards.forEach(card => {
-                // On récupère le titre (h4) et la description (p) de chaque carte
                 const title = card.querySelector('h4').innerText.toLowerCase();
-                const description = card.querySelector('p').innerText.toLowerCase();
-
-                // Si le texte recherché est dans le titre ou la description
-                if (title.includes(searchText) || description.includes(searchText)) {
-                    card.style.display = "block"; // On affiche
+                if (title.includes(searchText)) {
+                    card.style.display = "block";
                 } else {
-                    card.style.display = "none"; // On cache
+                    card.style.display = "none";
                 }
             });
         }
 
-        // Recherche quand on clique sur le bouton
         searchBtn.addEventListener('click', filterProjects);
-
-        // Recherche en temps réel quand on tape au clavier
         searchInput.addEventListener('keyup', filterProjects);
     </script>
 </body>
