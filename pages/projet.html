@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Mariame NDIAYE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a href="../index.html" class="nav-logo">Mariame</a>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="a propos.html">À Propos</a></li>
+                <li><a href="projet.html" class="active">Projets</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-switch">
+                <i class='bx bx-moon'></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding-bottom: 20px;">
+        <span class="name-script">Mes Réalisations</span>
+        <h1 class="hero-title">ESPACE INTERACTIF</h1>
+    </header>
+
+    <section class="search-section">
+        <div class="search-container">
+            <h2 class="skills-subtitle"><i class='bx bx-search-alt'></i> Rechercher un projet</h2>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Ex: ESP32, Portfolio, E-commerce...">
+                <button id="searchBtn" class="cv-link" style="padding: 10px 25px;">Filtrer</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="projects-grid" id="projectsGrid">
+
+            <div class="project-card">
+                <img src="../images/portfolio.png" alt="Mon Portfolio">
+                <div class="project-overlay">
+                    <h4>Mon Portfolio</h4>
+                    <p>Développement Web & Design</p>
+                    <a href="https://mariame-nd.github.io/mariame.portfolio/" target="_blank" class="view-btn">Voir le
+                        site</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="../images/al qalb.png" alt="Association Al Qalb">
+                <div class="project-overlay">
+                    <h4>Al Qalb</h4>
+                    <p>Site de Solidarité Communautaire</p>
+                    <a href="https://mariame-nd.github.io/projet-web-alqalb/" target="_blank" class="view-btn">Voir le
+                        site</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="../images/restaurant.png" alt="Spicy Food">
+                <div class="project-overlay">
+                    <h4>Spicy Food</h4>
+                    <p>Interface Restaurant Teranga</p>
+                    <a href="#modal-resto" class="view-btn">Détails</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="../images/e commerce.png" alt="E-Commerce">
+                <div class="project-overlay">
+                    <h4>E-Commerce</h4>
+                    <p>Boutique de Maillots de Foot</p>
+                    <a href="#modal-shop" class="view-btn">Détails</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="../images/flyers.png" alt="Business Model">
+                <div class="project-overlay">
+                    <h4>Samb Sa Alal</h4>
+                    <p>Business Model Canvas - Groupe 4</p>
+                    <a href="../assets/Business Model Groupe 4.pdf" target="_blank" class="view-btn">Voir PDF</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="../images/esp32.png" alt="ESP32 IoT">
+                <div class="project-overlay">
+                    <h4>ESP32 Server</h4>
+                    <p>Arduino & Domotique IoT</p>
+                    <a href="#modal-esp" class="view-btn">Détails</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="modal-resto" class="modal-overlay">
+        <div class="modal-card">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="../images/restaurant.png" alt="Restaurant Details">
+            <div class="modal-body">
+                <h3>Concept : Teranga Food</h3>
+                <p>Développement d'une interface responsive pour la gestion des commandes et la présentation des menus.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-shop" class="modal-overlay">
+        <div class="modal-card">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="../images/e commerce.png" alt="Shop Details">
+            <div class="modal-body">
+                <h3>Vente de Maillots</h3>
+                <p>Plateforme spécialisée avec système de filtrage et catalogue dynamique.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-esp" class="modal-overlay">
+        <div class="modal-card">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="../images/esp32.png" alt="ESP32 Details">
+            <div class="modal-body">
+                <h3>IoT & Domotique</h3>
+                <p>Serveur web hébergé sur ESP32 pour le contrôle de capteurs en temps réel.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/Mariame-nd" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/mariame-ndiaye-82563935a" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/mariam__nde" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copyright-text">&copy; 2026 MARIAME NDIAYE. TOUS DROITS RÉSERVÉS.</p>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('#nav-list');
+        const themeBtn = document.querySelector('#theme-toggle');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        themeBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(t) {
+            themeBtn.querySelector('i').className = t === 'dark' ? 'bx bx-sun' : 'bx bx-moon';
+        }
+
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        function filterProjects() {
+            const searchText = searchInput.value.toLowerCase();
+            projectCards.forEach(card => {
+                const title = card.querySelector('h4').innerText.toLowerCase();
+                const desc = card.querySelector('p').innerText.toLowerCase();
+                if (title.includes(searchText) || desc.includes(searchText)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        searchBtn.addEventListener('click', filterProjects);
+        searchInput.addEventListener('keyup', filterProjects);
+    </script>
+</body>
+
+</html>

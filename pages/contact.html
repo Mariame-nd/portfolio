@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mariame NDIAYE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a href="../index.html" class="nav-logo">Mariame</a>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="a propos.html">À Propos</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-switch">
+                <i class='bx bx-moon'></i>
+            </button>
+        </div>
+    </nav>
+    <div class="scroll-container">
+        <h1 class="title-resume">Restons <span>en contact</span></h1>
+
+        <div class="contact-grid">
+            <section class="form-section">
+                <h2 class="form-label"><i class='bx bx-envelope'></i> Me joindre</h2>
+                <form class="custom-form">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Votre message..." rows="4" required></textarea>
+                    <button type="submit" class="btn-main">Envoyer</button>
+                </form>
+
+                <div class="contact-social-icons">
+                    <a href="https://wa.me/221774920051" target="_blank" class="whatsapp"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.instagram.com/mariam__nde" target="_blank" class="instagram"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://snapchat.com/t/chkzPfgy" target="_blank" class="snapchat"><i
+                            class='bx bxl-snapchat'></i></a>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="form-label"><i class='bx bx-edit'></i> Nouveau Projet</h2>
+                <form class="custom-form">
+                    <select required>
+                        <option value="" disabled selected>Type de service</option>
+                        <option value="web">Web Design</option>
+                        <option value="iot">IoT / ESP32</option>
+                        <option value="cyber">Cybersécurité</option>
+                    </select>
+                    <input type="number" placeholder="Budget estimé (FCFA)">
+                    <textarea placeholder="Décrivez votre idée..." rows="4"></textarea>
+                    <button type="submit" class="btn-main">Soumettre</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/Mariame-nd" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/mariame-ndiaye-82563935a" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/mariam__nde" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copyright-text">&copy; 2026 MARIAME NDIAYE. TOUS DROITS RÉSERVÉS.</p>
+    </footer>
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('#nav-list');
+        const themeBtn = document.querySelector('#theme-toggle');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        themeBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+
+</body>
+
+</html>

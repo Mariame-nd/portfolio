@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Mariame NDIAYE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <a href="../index.html" class="nav-logo">Mariame</a>
+
+            <ul class="nav-list" id="nav-list">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="a propos.html" class="active">À Propos</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="theme-switch">
+                <i class='bx bx-moon'></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="intro-section">
+        <div class="photo-frame">
+            <img src="../images/maphoto.jpeg" alt="Mariame Ndiaye">
+        </div>
+
+        <div class="intro-text">
+            <h1 class="title-ask">À PROPOS <span class="cursive">de moi</span></h1>
+            <div class="divider"></div>
+
+            <p class="main-para">
+                Je m’appelle <strong>Mariame Ndiaye</strong>, étudiante en Licence 2 en <strong>Génie Logiciel et
+                    Administration Réseaux</strong>.
+            </p>
+
+            <p class="secondary-para">
+                Passionnée par le numérique, je m'intéresse au développement web et à la sécurité des systèmes. Mon
+                objectif est de devenir <strong>Ingénieure en Cybersécurité Aéronautique</strong>.
+            </p>
+
+            <div class="skills-wrapper">
+                <h3 class="skills-subtitle"><i class='bx bxs-terminal'></i> Stack Technique</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class='bx bxl-html5'></i><span>HTML5</span></div>
+                    <div class="skill-item"><i class='bx bxl-css3'></i><span>CSS3</span></div>
+                    <div class="skill-item"><i class='bx bxl-javascript'></i><span>JS</span></div>
+                    <div class="skill-item"><i class='bx bxl-php'></i><span>PHP</span></div>
+                    <div class="skill-item"><i class='bx bxl-c-plus-plus'></i><span>C++</span></div>
+                    <div class="skill-item"><i class='bx bxs-data'></i><span>SQL</span></div>
+                    <div class="skill-item"><i class='bx bx-network-chart'></i><span>Réseaux</span></div>
+                </div>
+            </div>
+
+            <div class="cv-button-container">
+                <a href="contact.html" class="cv-link">ME CONTACTER</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/Mariame-nd" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/mariame-ndiaye-82563935a" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/mariam__nde" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copyright-text">
+            &copy; 2026 MARIAME NDIAYE. TOUS DROITS RÉSERVÉS.
+        </p>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('#nav-list');
+        const themeBtn = document.querySelector('#theme-toggle');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        themeBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(t) {
+            themeBtn.querySelector('i').className = t === 'dark' ? 'bx bx-sun' : 'bx bx-moon';
+        }
+    </script>
+</body>
+
+</html>
